@@ -1,12 +1,22 @@
+.calendar-header{
+  display: flex;
+}
 
+.login{
+  margin: 10px;
+}
 
-.calendar_table {
+.new-registration{
+  margin: 10px;
+}
+
+.calendar-table {
   background-color: #b6f6fb;
   width: 100vw;
   height: 500px;
 }
 
-.chat_table {
+.chat-table {
   background-color: #FFFFFF;
   width: 300px;
 }
