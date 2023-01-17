@@ -22,7 +22,7 @@
 
 | Column             | Type       | Options                        |
 |--------------------|------------|--------------------------------|
-| time               | integer    | null: false                    |
+| desired_time       | integer    | null: false                    |
 | user               | references | null: false, foreign_key: true |
 
 ### Association

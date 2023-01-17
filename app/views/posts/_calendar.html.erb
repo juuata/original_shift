@@ -1,4 +1,7 @@
 <div class="calendar-header">
+  <div class="title">
+    シフトカレンダー
+  </div>
   <div class="login">
     <%= link_to "ログイン", new_user_session_path %>
   </div>
@@ -8,8 +11,16 @@
 </div>
 
 <div class="calendar-main">
-  <%= month_calendar do |date| %>
-    <%= date %>
-  <% end %>
+  <div class="simple-calendar">
+    <%= month_calendar events: @posts do |date, events| %>
+      <%= date.day %>
+
+      <% events.each do |event| %>
+        <div>
+          <%= event.time %>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
 </div>
 

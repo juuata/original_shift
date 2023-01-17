@@ -1,5 +1,14 @@
 .calendar-header{
   display: flex;
+  align-items: center;
+  background-color: #ffdd8d;
+}
+
+.title{
+  font-size: 150%;
+  font-family: メイリオ;
+  margin-left: 10px;
+  margin-right: 15px;
 }
 
 .login{
@@ -11,9 +20,9 @@
 }
 
 .calendar-table {
-  background-color: #b6f6fb;
+  background-color: #e8feff;
   width: 100vw;
-  height: 500px;
+  height: 570px;
 }
 
 .chat-table {
