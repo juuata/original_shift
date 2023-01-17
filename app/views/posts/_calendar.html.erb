@@ -8,6 +8,9 @@
   <div class="new-registration">
     <%= link_to "新規登録", new_user_registration_path %>
   </div>
+  <div class="post-time">
+    <%= link_to "希望時間", new_post_path %>
+  </div>
 </div>
 
 <div class="calendar-main">
@@ -15,9 +18,9 @@
     <%= month_calendar events: @posts do |date, events| %>
       <%= date.day %>
 
-      <% events.each do |event| %>
+      <% events.each do |post| %>
         <div>
-          <%= event.time %>
+          <%= post.desired_time.name %>
         </div>
       <% end %>
     <% end %>

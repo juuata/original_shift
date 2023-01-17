@@ -21,6 +21,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:desired_time)#merge(user: current_user)
+    params.require(:post).permit(:desired_time_id)#merge(user: current_user)
   end
 end
