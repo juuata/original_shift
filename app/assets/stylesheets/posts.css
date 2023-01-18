@@ -7,18 +7,22 @@
 .title{
   font-size: 150%;
   font-family: メイリオ;
-  margin-left: 10px;
-  margin-right: 15px;
+  margin: 0px 15px;
 }
 
 .btn-lists{
+  font-family: メイリオ;
   display: flex;
   align-items: center;
-  
 }
 
 li{
   list-style:none;
+}
+
+.user-name{
+  text-decoration: none;
+  margin: 10px;
 }
 
 .logout{
@@ -26,7 +30,7 @@ li{
   margin: 10px;
 }
 
-.user-name{
+.post-time{
   text-decoration: none;
   margin: 10px;
 }
@@ -41,15 +45,13 @@ li{
   margin: 10px;
 }
 
-.post-time{
-  text-decoration: none;
-  margin: 10px;
+.calendar-table {
+  width: 100vw;
+  height: 600px;
 }
 
-.calendar-table {
+.simple-calendar{
   background-color: #e8feff;
-  width: 100vw;
-  height: 570px;
 }
 
 .chat-table {

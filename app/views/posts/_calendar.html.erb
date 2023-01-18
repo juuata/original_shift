@@ -5,12 +5,13 @@
   <div class="nav">
     <ul class='btn-lists'>
       <% if user_signed_in? %>
-        <li><%= link_to current_user, "#", class: "user-name"  %></li>
+        ユーザー名:
+        <li><%= link_to current_user.family_name , "#", class: "user-name" %></li>
         <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
+        <li><%= link_to '希望時間の投稿', new_post_path, class: "post-time" %></li>
       <% else %>
         <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
         <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
-        <li><%= link_to "希望時間", new_post_path, class: "post-time" %></li>
       <% end %>
     </ul>
   </div>
@@ -22,7 +23,8 @@
       <%= date.day %>
       <% posts.each do |post| %>
         <div>
-          <%= post.desired_time %>
+          <%= post.user.family_name %>
+          <%= link_to post.desired_time.name, post_path(post.id) %>
         </div>
       <% end %>
     <% end %>
