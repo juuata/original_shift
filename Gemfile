@@ -64,3 +64,5 @@ gem "simple_calendar", "~> 2.4"
 gem 'rails-i18n'
 
 gem 'active_hash'
+
+gem 'pry-rails'

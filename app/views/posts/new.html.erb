@@ -1,8 +1,13 @@
-<%= form_with(model: @post,  local: true) do |form| %>
+<%= form_with(model: @post, local: true) do |form| %>
 
   <div class="article-box">
     希望時間を投稿する
     <%= form.collection_select(:desired_time_id, DesiredTime.all, :id, :name, {}, {class:"genre-select"}) %>
+  </div>
+
+  <div class="start-time">
+    <%= form.label :日時 %>
+    <%= form.datetime_select :start_time %>
   </div>
 
   <div class="submit">

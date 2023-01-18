@@ -1,7 +1,6 @@
 class PostsController < ApplicationController
   def index
     @posts = Post.all
-    @post = Post.new
   end
 
   def new
@@ -9,18 +8,19 @@ class PostsController < ApplicationController
   end
   
   def create
-    @post = Post.new(post_params)
-    #if @post.save
+    post = Post.new(post_params)
+    binding.pry
+    if post.save
       redirect_to root_path
     #else
       #render :new
-    #end
+    end
   end
 
 
   private
 
   def post_params
-    params.require(:post).permit(:desired_time_id)#merge(user: current_user)
+    params.require(:post).permit(:desired_time_id, :start_time)merge(user_id: current_user.id)
   end
 end

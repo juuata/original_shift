@@ -23,6 +23,7 @@
 | Column             | Type       | Options                        |
 |--------------------|------------|--------------------------------|
 | desired_time       | integer    | null: false                    |
+| start_time         | datetime   | null: false                    |
 | user               | references | null: false, foreign_key: true |
 
 ### Association

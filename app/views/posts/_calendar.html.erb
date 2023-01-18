@@ -15,15 +15,13 @@
 
 <div class="calendar-main">
   <div class="simple-calendar">
-    <%= month_calendar events: @posts do |date, events| %>
+    <%= month_calendar events: @posts do |date, posts| %>
       <%= date.day %>
-
-      <% events.each do |post| %>
+      <% posts.each do |post| %>
         <div>
-          <%= post.desired_time.name %>
+          <%= post.desired_time %>
         </div>
       <% end %>
     <% end %>
   </div>
 </div>
-
