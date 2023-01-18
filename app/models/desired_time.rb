@@ -1,4 +1,4 @@
-class Desiredtime < ActiveHash::Base
+class DesiredTime < ActiveHash::Base
   self.data = [
     { id: 1, name: '---' },
     { id: 2, name: '午前勤務（6:00~12:00)' },
