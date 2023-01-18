@@ -2,14 +2,17 @@
   <div class="title">
     シフトカレンダー
   </div>
-  <div class="login">
-    <%= link_to "ログイン", new_user_session_path %>
-  </div>
-  <div class="new-registration">
-    <%= link_to "新規登録", new_user_registration_path %>
-  </div>
-  <div class="post-time">
-    <%= link_to "希望時間", new_post_path %>
+  <div class="nav">
+    <ul class='btn-lists'>
+      <% if user_signed_in? %>
+        <li><%= link_to current_user, "#", class: "user-name"  %></li>
+        <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
+      <% else %>
+        <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
+        <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+        <li><%= link_to "希望時間", new_post_path, class: "post-time" %></li>
+      <% end %>
+    </ul>
   </div>
 </div>
 

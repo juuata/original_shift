@@ -11,15 +11,38 @@
   margin-right: 15px;
 }
 
-.login{
+.btn-lists{
+  display: flex;
+  align-items: center;
+  
+}
+
+li{
+  list-style:none;
+}
+
+.logout{
+  text-decoration: none;
   margin: 10px;
 }
 
-.new-registration{
+.user-name{
+  text-decoration: none;
+  margin: 10px;
+}
+
+.login{
+  text-decoration: none;
+  margin: 10px;
+}
+
+.sign-up{
+  text-decoration: none;
   margin: 10px;
 }
 
 .post-time{
+  text-decoration: none;
   margin: 10px;
 }
 

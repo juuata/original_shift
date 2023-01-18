@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :create]
+
   def index
     @posts = Post.all
   end
@@ -21,6 +23,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:desired_time_id, :start_time)merge(user_id: current_user.id)
+    params.require(:post).permit(:desired_time_id, :start_time)#merge(user_id: current_user.id)
   end
 end
