@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create]
   before_action :set_post, only: [:show, :edit, :update, :destroy]
-  before_action :move_to_index, only: [:show]
+  before_action :move_to_index, except: [:index, :new, :create]
 
 
   def index
