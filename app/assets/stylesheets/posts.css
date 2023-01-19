@@ -1,3 +1,7 @@
+.wrapper{
+  height: 1000px;
+}
+
 .calendar-header{
   display: flex;
   align-items: center;
@@ -58,7 +62,17 @@ li{
   background-color: #e8feff;
 }
 
+.chat-main{
+  display: flex;
+  align-items: center;
+  background-color: #ffdd8d;
+  height: 50px;
+}
+
+
 .chat-table {
-  background-color: #FFFFFF;
-  width: 300px;
+  background-color: rgb(200, 251, 199);
+  width: 100vw;
+  height: 600px;
+  overflow: scroll;
 }
