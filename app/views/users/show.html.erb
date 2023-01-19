@@ -5,7 +5,7 @@
   <div class="nav">
     <ul class='btn-lists'>
       <% if user_signed_in? %>
-        ユーザー名:
+        マイページ:
         <li><%= link_to current_user.family_name , user_path(current_user.id), class: "user-name" %></li>
         <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
         <li><%= link_to '希望時間の投稿', new_post_path, class: "post-time" %></li>
@@ -23,7 +23,6 @@
       <%= date.day %>
       <% posts.each do |post| %>
         <div>
-          <%= post.user.family_name %>
           <%= link_to post.desired_time.name, post_path(post.id) %>
         </div>
       <% end %>

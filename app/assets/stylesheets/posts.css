@@ -10,6 +10,10 @@
   margin: 0px 15px;
 }
 
+.title-name{
+  text-decoration: none;
+}
+
 .btn-lists{
   font-family: メイリオ;
   display: flex;
