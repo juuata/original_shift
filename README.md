@@ -26,7 +26,14 @@ https://original-shift.onrender.com
 https://docs.google.com/spreadsheets/d/1kZMQD9SmyYmAwT6N67n-MF2DoaXUy8ifEq4-ycDVW3k/edit#gid=982722306
 
 ## 実装した機能についての画像やGIFおよびその説明※
+一覧/ログイン機能
+[![Image from Gyazo](https://i.gyazo.com/21007c621af896336e05fc85f02ef0de.gif)](https://gyazo.com/21007c621af896336e05fc85f02ef0de)
 
+シフト希望時間 投稿機能
+[![Image from Gyazo](https://i.gyazo.com/c76f9f326ad48c73506f5cf560ca43ae.gif)](https://gyazo.com/c76f9f326ad48c73506f5cf560ca43ae)
+
+シフト希望時間 編集機能
+[![Image from Gyazo](https://i.gyazo.com/e0413033f0c1e37a9a38e163c967e39e.gif)](https://gyazo.com/e0413033f0c1e37a9a38e163c967e39e)
 
 ## 実装予定の機能
 ・チャット機能の充実
