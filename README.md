@@ -6,10 +6,14 @@ ORIGINAL SHIFT
 ## アプリケーション概要  
 シフトの共有、希望時間の投稿機能
 
-## URL※  
+## URL
 https://original-shift.onrender.com
 
 ## テスト用アカウント
+Email:melon@melon.com
+Password:melon2023
+お名前：瓜田 瓜
+お名前カナ：ウリタ ウリ
 
 ## 利用方法
 ・新規登録からユーザー情報を登録する
